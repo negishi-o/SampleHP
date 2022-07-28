@@ -1,11 +1,240 @@
 {% extends 'component/base.html.twig' %}
 
 {% block title %}Come Buck{% endblock %}
+{% block TopMessage %}Company{% endblock %}
 
 {% block content %}
-<div class="container">
-    <div class="top-message">
-        <h1>Kill you</h1>
-    </div>
-</div>
+	<div class="container">
+		<main>
+			<div class="main-info">
+				<div class="card">
+					<img src="img/card01.jpg" class="card-img-top" alt="画像1">
+					<div class="card-body">
+						<p class="card-text">
+							We aim to coexist with nature
+														              We work to improve society.
+						</p>
+					</div>
+				</div>
+				<div class="card">
+					<img src="img/card02.jpg" class="card-img-top" alt="画像1">
+					<div class="card-body">
+						<p class="card-text">
+							Even if you are hated and violent by others
+														We are united and do not succumb to violence
+							              I will continue to fight.
+						</p>
+					</div>
+				</div>
+				<div class="card">
+					<img src="img/card03.jpg" class="card-img-top" alt="画像1">
+					<div class="card-body">
+						<p class="card-text">
+							To open up the future, our company
+							              We will continue to grow without stopping.
+						</p>
+					</div>
+				</div>
+				<div class="card">
+					<img src="img/card04.jpg" class="card-img-top" alt="画像1">
+					<div class="card-body">
+						<p class="card-text">
+							Recruitment of freelancers, not office workers
+														                doing. Earn up to 10 million yen
+														                Human resources are coming out and our company is on track.
+						</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="main-box">
+				<div class="main-message">
+					<div class="message">
+						<h2>Do you want to have fun and earn ??</h2>
+						<p>If you really want
+														                                                Press the button below.
+														                                                That way you can be a great trader.
+						</p>
+						<button type="button" class="btn btn-primary btn-lg">Large button</button>
+					</div>
+					<div class="sub-message">
+						<p>I am a cat. There is no name yet.
+																												I have no idea where I was born. I remember only crying in a dim and damp place. 
+																					              I saw human beings for the first time here. Moreover, I heard later that it was the most evil race of human beings called Shosei.
+																					              This shosei is a story about catching us from time to time and eating it in a boil. 
+																					              However, at that time, I had no idea whatsoever, so I didn't think it was particularly scary. 
+																					              However, when it was placed on the palm of his palm and lifted up, it just felt fluffy. 
+																					              It is probably the beginning of what is called a human being that he calms down a little on his palm and sees the face of the student. 
+																					              The feeling that I thought was strange at this time still remains. The face, 
+																					              which should have been decorated with the first hair, was slippery and was like a kettle.
+																					              After that, I met a lot of cats, but I have never met such a one-wheeled cat. Not only that, 
+																					              the center of the face is too protruding. Then that hole
+						</p>
+					</div>
+					<div id="carouselExampleControls" class="carousel slide sub-baner" data-bs-ride="carousel">
+						<div class="carousel-inner">
+							<div class="carousel-item active">
+								<img src="img/baner01.jpg" class="d-block w-100" alt="画像01">
+							</div>
+							<div class="carousel-item">
+								<img src="img/baner02.jpg" class="d-block w-100" alt="画像02">
+							</div>
+						</div>
+						<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							<span class="visually-hidden">Previous</span>
+						</button>
+						<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+							<span class="carousel-control-next-icon" aria-hidden="true"></span>
+							<span class="visually-hidden">Next</span>
+						</button>
+					</div>
+				</div>
+
+				<!-- TradingView Widget BEGIN -->
+				<div class="tradingview-widget-container">
+					<div class="tradingview-widget-container__widget"></div>
+					<div class="tradingview-widget-copyright">TradingView提供の<a href="https://jp.tradingview.com/markets/" rel="noopener" target="_blank">
+							<span class="blue-text">金融マーケット</span>
+						</a>
+					</div>
+					<script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-market-overview.js" async>
+						{
+"colorTheme": "dark",
+"dateRange": "12M",
+"showChart": true,
+"locale": "en_US",
+"largeChartUrl": "",
+"isTransparent": false,
+"showSymbolLogo": true,
+"showFloatingTooltip": false,
+"width": "400",
+"height": "660",
+"plotLineColorGrowing": "rgba(41, 98, 255, 1)",
+"plotLineColorFalling": "rgba(41, 98, 255, 1)",
+"gridLineColor": "rgba(240, 243, 250, 0)",
+"scaleFontColor": "rgba(120, 123, 134, 1)",
+"belowLineFillColorGrowing": "rgba(41, 98, 255, 0.12)",
+"belowLineFillColorFalling": "rgba(41, 98, 255, 0.12)",
+"belowLineFillColorGrowingBottom": "rgba(41, 98, 255, 0)",
+"belowLineFillColorFallingBottom": "rgba(41, 98, 255, 0)",
+"symbolActiveColor": "rgba(41, 98, 255, 0.12)",
+"tabs": [
+{
+"title": "index",
+"symbols": [
+{
+"s": "FOREXCOM:SPXUSD",
+"d": "S&P 500"
+},
+{
+"s": "FOREXCOM:NSXUSD",
+"d": "US 100"
+},
+{
+"s": "FOREXCOM:DJI",
+"d": "Dow 30"
+},
+{
+"s": "INDEX:NKY",
+"d": "Nikkei 225"
+}, {
+"s": "INDEX:DEU40",
+"d": "DAX Index"
+}, {
+"s": "FOREXCOM:UKXGBP",
+"d": "UK 100"
+}
+],
+"originalTitle": "Indices"
+}, {
+"title": "futures",
+"symbols": [
+{
+"s": "CME_MINI:ES1!",
+"d": "S&P 500"
+},
+{
+"s": "CME:6E1!",
+"d": "Euro"
+},
+{
+"s": "COMEX:GC1!",
+"d": "Gold"
+},
+{
+"s": "NYMEX:CL1!",
+"d": "Crude Oil"
+}, {
+"s": "NYMEX:NG1!",
+"d": "Natural Gas"
+}, {
+"s": "CBOT:ZC1!",
+"d": "Corn"
+}
+],
+"originalTitle": "Futures"
+}, {
+"title": "Bonds",
+"symbols": [
+{
+"s": "CME:GE1!",
+"d": "Eurodollar"
+},
+{
+"s": "CBOT:ZB1!",
+"d": "T-Bond"
+},
+{
+"s": "CBOT:UB1!",
+"d": "Ultra T-Bond"
+},
+{
+"s": "EUREX:FGBL1!",
+"d": "Euro Bund"
+}, {
+"s": "EUREX:FBTP1!",
+"d": "Euro BTP"
+}, {
+"s": "EUREX:FGBM1!",
+"d": "Euro BOBL"
+}
+],
+"originalTitle": "Bonds"
+}, {
+"title": "FX",
+"symbols": [
+{
+"s": "FX:EURUSD",
+"d": "EUR/USD"
+},
+{
+"s": "FX:GBPUSD",
+"d": "GBP/USD"
+},
+{
+"s": "FX:USDJPY",
+"d": "USD/JPY"
+},
+{
+"s": "FX:USDCHF",
+"d": "USD/CHF"
+}, {
+"s": "FX:AUDUSD",
+"d": "AUD/USD"
+}, {
+"s": "FX:USDCAD",
+"d": "USD/CAD"
+}
+],
+"originalTitle": "Forex"
+}
+]
+}
+					</script>
+				</div>
+				<!-- TradingView Widget END -->
+			</div>
+		</main>
+	</div>
 {% endblock %}

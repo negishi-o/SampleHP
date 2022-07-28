@@ -1,6 +1,94 @@
 @charset "utf-8";
 
-h1{
-  color: red;
+body.hp {
+  background-color: #000;
+  color: green;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
   font-weight: bold;
+  text-align: center;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+.menus ul {
+  display: flex;
+  margin: 0 auto;
+  padding: 0 3%;
+  width: 94%;
+  max-width: 960px;
+}
+
+.menus ul li {
+  position: relative;
+  width: 20%;
+}
+
+.menus ul li:first-child::before {
+  position: absolute;
+  display: block;
+  content: "";
+  top: 25%;
+  left: 0px;
+  width: 1px;
+  height: 50%;
+  background-color: green;
+}
+
+.menus ul li::after {
+  position: absolute;
+  display: block;
+  content: "";
+  top: 25%;
+  right: 0px;
+  width: 1px;
+  height: 50%;
+  background-color: green;
+}
+
+.menus ul li a {
+  display: block;
+  padding: 17px 10px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.menus ul li a:hover {
+  background-color: blue;
+  color: #fff;
+}
+
+.main-info {
+  display: flex;
+}
+
+.card {
+  margin: 20px;
+  width: 18rem;
+}
+
+.main-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-message {
+  padding: 20px;
+}
+
+.message {
+  padding-bottom: 10px;
+}
+
+.sub-message {
+  padding-bottom: 15px
+}
+
+.footer {
+  text-align: center;
 }
