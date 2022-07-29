@@ -29,7 +29,7 @@ ul li {
   width: 20%;
 }
 
-.menus ul li:first-child::before {
+.menus ul li a:first-child::before {
   position: absolute;
   display: block;
   content: "";
@@ -40,7 +40,7 @@ ul li {
   background-color: green;
 }
 
-.menus ul li::after {
+.menus ul li a::after {
   position: absolute;
   display: block;
   content: "";
@@ -58,6 +58,44 @@ ul li {
   text-decoration: none;
 }
 
+@media screen and (max-width: 768px) {
+  .menus ul {
+    display: flex;
+    width: auto;
+  }
+  .menus ul li {
+    position: relative;
+    width: 25%;
+  }
+  
+  .menus ul li:first-child::before {
+    position: absolute;
+    display: block;
+    content: "";
+    top: 25%;
+    left: 0px;
+    width: 1px;
+    height: 50%;
+    background-color: green;
+  }
+  
+  .menus ul li::after {
+    position: absolute;
+    display: block;
+    content: "";
+    top: 25%;
+    right: 0px;
+    width: 1px;
+    background-color: green;
+  }
+  
+  .menus ul li a {
+    padding: 17px 10px;
+    text-align: center;
+    margin: auto;
+    text-decoration: none;
+  }
+}
 .menus ul li a:hover {
   background-color: blue;
   color: #fff;
@@ -66,7 +104,12 @@ ul li {
 .main-info {
   display: flex;
 }
-
+@media screen and (max-width: 768px) {
+  .main-info {
+    flex-wrap: wrap;
+    width: auto;
+  }
+}
 .card {
   margin: 20px;
   width: 18rem;
@@ -77,6 +120,7 @@ ul li {
   justify-content: space-between;
 }
 
+
 .main-message {
   padding: 20px;
 }
@@ -86,9 +130,27 @@ ul li {
 }
 
 .sub-message {
-  padding-bottom: 15px
+  padding-bottom: 15px;
 }
 
+.sub-baner{
+  height: auto;
+}
+@media screen and (max-width: 768px) {
+  .main-box {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  .tradingview-widget-container{
+    margin: auto;
+  }
+
+  .sub-message {
+    width: auto;
+  }
+}
 .footer {
   text-align: center;
 }
